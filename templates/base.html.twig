@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}StageSeller | Backoffice {% endblock %}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body {% if app.user %}{% else %}style="background-color: black"{% endif %}>
+    {% if app.user %}
+        {% include "partials/navbar.html.twig" %}
+        {% include "partials/sidebar.html.twig" %}
+    {% endif %}
+        {% block body %}{% endblock %}
+    </body>
+</html>

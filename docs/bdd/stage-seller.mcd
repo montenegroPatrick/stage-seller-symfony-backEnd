@@ -1,0 +1,35 @@
+:
+User: code_user, email, password, role, first_name, last_name, address, post_code, city,  is_user_active, show_tuto, is_profile_completed, last_connected
+:
+:
+:
+
+:
+is_2, 10 User, 11 Company
+:
+is_1, 10 User, 11 Student
+:
+
+offers, 0N Company, 10 Stage
+Company: code_company, company_name, siret
+matches, 0N Company, 0N Student:init,is_mutual
+:
+:
+
+:
+looks, ON Company, 0N Skill
+Skill: code_skill,type,name
+owns, 0N Student, 0N Skill
+Student: code_student, image_profile, description, resume, linkedin, github
+
+:
+Stage: code_stage, description, start_date, duration, location, is_remote_friendly, is_travel_friendly
+lists, 1N Stage, 0N Skill
+:
+:
+
+:
+:
+:
+searches, 0N Student, 01 Stage
+:

@@ -1,0 +1,13 @@
+POST http://localhost:8000/api/stages
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODE1ODg4NjksImV4cCI6MTY4MTY1MzY2OSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYm91eWFrYUBzZWxsZXIuY29tIn0.a6Q30PydkZwXeUL5xiYSo2zv5YBszTpF57FXczWaKNmre1j200Uk_2gyacXy9otvVEaiWx-KrwADeSRRr4s4POcNXetBMAEbRp8ZVB50VFwh6bIM6CnWQWnySOyUec65i-jheTQYRp9MXq2lO1H2MXmTofop50CS8N7LczFehQzNfTujNbv91cjgByxFAT4lZJjWhXWvDJfmJTv3KlOOeNv_o5OlJN-gCFTyYRDawnecNtW6hF3uuqoRXYwrRFHjFyv6DSArPVnAZUlkoVby4rmrfr_VA6nx4waQ8m4YbSWQPqz5NVTCio3qIaQvhB5tLqSQKLxVC861Iqj-U99BDQ
+
+{
+  "description": "hello",
+  "startDate": "01/06/2023",
+  "duration": 3,
+  "location": "Paris",
+  "isRemoteFriendly": true,
+  "isTravelFriendly": false,
+  "skills": [2, 4]
+}

@@ -1,0 +1,13 @@
+POST http://localhost:8000/api/register
+content-type: application/json
+
+{
+    "email": "farfadet@seller.com",
+    "companyName":"farfadet",
+    "siret": "78652236541785",
+    "password": "test",
+    "postCode": 75014,
+    "type":"COMPANY",
+    "city":"Paris",
+    "address":"Rue Nicolas Taunay"
+}

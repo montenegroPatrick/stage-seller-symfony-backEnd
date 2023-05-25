@@ -1,0 +1,8 @@
+PUT http://localhost:8000/api/stages/9
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODE1ODQyNDEsImV4cCI6MTY4MTY0OTA0MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91bmVzQHNlbGxlci5jb20ifQ.I5Cyry2Q2-Aqy4REfMf3fT4qRGGfyGmeWZj2uQW2XuEjzFg7Om8nuZNOOWc3jpWRZX7JKp8GPMTa2PPQEjeYn-eIL_3MxLrlpUe-L90tc0iJJL1LJ782gQ1DuvgS5_n9Eq2UTRTinYS0GC9PThiLT-l5WuXYAuk0oECsmbP32Gyha0fZXi9kV56kXkC8LgGwkIEYerb2x2RF-i3I3j9XNU3mxt7p89I-xGe_LbmyZdRpiZFNWovnTIAVthG4ZZNsRHpFXa5qbYh1g2frxbxnRmz8vqJv3b-KxefqswUlbCVvvYrUfZqBZ-S9WER_M86CpqiUrbE_pnEBH6y8ldVcsQ
+
+{
+  "location": "TICO",
+  "skills": [1]
+}

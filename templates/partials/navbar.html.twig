@@ -1,0 +1,43 @@
+<!-- Main navigation container -->
+<nav
+  class="relative flex w-full flex-wrap items-center justify-between bg-neutral-900 py-2 text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start lg:py-4"
+  data-te-navbar-ref>
+  <div class="flex w-full flex-wrap items-center justify-between px-3">
+    <!-- Collapsible navigation container -->
+    <div
+      class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+      id="navbarSupportedContent4"
+      data-te-collapse-item>
+      <!-- Left navigation links -->
+      <ul
+        class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+        data-te-navbar-nav-ref>
+        <!-- Dashboard link -->
+        <li class="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="{{ path('app_backoffice_user_index') }}"
+            data-te-nav-link-ref
+            ><i class="fa-solid fa-house"></i></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right elements -->
+    <div class="relative flex items-center">
+        {% if app.user %}
+          <p
+            class="text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            data-te-nav-link-ref
+          >{{ app.user.email }}</p
+        {% endif %}
+
+      <!-- Second dropdown container -->
+      <div class="relative" data-te-dropdown-ref>
+        <!-- Second dropdown trigger -->
+        <a href="{{ path('app_logout') }}" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
