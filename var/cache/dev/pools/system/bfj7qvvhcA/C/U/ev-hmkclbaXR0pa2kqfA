@@ -1,0 +1,234 @@
+<?php //App%255CController%255CApi%255CUserController%2523getMutualMatches
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['OpenApi\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Put')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/users/matches/mutual',
+            ],
+            'name' => [
+                'app_api_matches_mutual',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/api/users/matches/mutual',
+            ],
+            'tags' => [
+                1 => [
+                    'User',
+                ],
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[5],
+                    $o[11],
+                ],
+            ],
+            '_context' => [
+                1 => $o[20],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+                14 => $o[18],
+                $o[16],
+                22 => $o[26],
+                $o[24],
+            ],
+            'name' => [
+                2 => 'token',
+            ],
+            'in' => [
+                2 => 'header',
+            ],
+            'required' => [
+                2 => true,
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                16 => $o[17],
+                18 => $o[19],
+                20 => $o[21],
+                24 => $o[25],
+                26 => $o[27],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                24 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                26 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 1460,
+                6 => 1460,
+                9 => 1460,
+                12 => 1460,
+                16 => 1460,
+                18 => 1460,
+                20 => 1460,
+                24 => 1460,
+                26 => 1460,
+            ],
+            'method' => [
+                3 => 'instantiateAnnotiation',
+                6 => 'instantiateAnnotiation',
+                9 => 'instantiateAnnotiation',
+                12 => 'instantiateAnnotiation',
+                16 => 'instantiateAnnotiation',
+                18 => 'instantiateAnnotiation',
+                20 => 'instantiateAnnotiation',
+                24 => 'instantiateAnnotiation',
+                26 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                20 => 'DocParser',
+                24 => 'DocParser',
+                26 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+                24 => 'Doctrine\\Common\\Annotations',
+                26 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[14],
+                ],
+                20 => [
+                    $o[1],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                26 => [
+                    $o[22],
+                ],
+            ],
+            'response' => [
+                5 => '302',
+                11 => '401',
+            ],
+            'description' => [
+                5 => 'Found / A user\'s matches',
+                11 => 'Unauthorized',
+                22 => 'User-match',
+            ],
+            '_unmerged' => [
+                5 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[14],
+                ],
+            ],
+            'ref' => [
+                8 => '#/components/schemas/User-match',
+            ],
+            'properties' => [
+                14 => [
+                    $o[15],
+                ],
+                22 => [
+                    $o[23],
+                ],
+            ],
+            'property' => [
+                15 => 'message',
+                23 => 'id',
+            ],
+            'type' => [
+                15 => 'string',
+                23 => 'integer',
+            ],
+            'example' => [
+                15 => 'Invalid JWT Token || Expired JWT Token',
+            ],
+            'schema' => [
+                22 => 'User-match',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[22],
+    ],
+    []
+); }];

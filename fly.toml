@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for stageseller on 2023-05-28T11:03:04+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "stageseller"
+primary_region = "cdg"
+
+[deploy]
+
+[env]
+  APP_ENV = "prod"
+  DATABASE_URL = "mysql://seller:seller@seller:3306/database"
+
+[[services]]
+  protocol = ""
+  internal_port = 8080

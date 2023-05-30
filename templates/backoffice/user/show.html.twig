@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+<div class="p-4 sm:ml-64">
+    <table class="min-w-full text-center text-sm font-light">
+        <tbody>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Id</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Email</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Roles</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.roles ? user.roles|json_encode : '' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Type</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.type }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">CompanyName</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.companyName }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Siret</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.siret }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">FirstName</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.firstName }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">LastName</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.lastName }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Address</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.address }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">PostCode</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.postCode }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">City</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.city }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">IsUserActive</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.isUserActive ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">ShowTuto</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.showTuto ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">IsProfileCompleted</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.isProfileCompleted ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">ProfileImage</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.profileImage }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Description</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.description }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Resume</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.resume }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Linkedin</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.linkedin }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">Github</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.github }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">LastConnected</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.lastConnected ? user.lastConnected|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">CreatedAt</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.createdAt ? user.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th class="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">UpdatedAt</th>
+                <td class="border-b dark:border-neutral-500 whitespace-nowrap  px-6 py-4 font-medium">{{ user.updatedAt ? user.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mt-4 flex justify-center">
+        <a href="{{ path('app_backoffice_user_edit', {'id': user.id}) }}">
+        <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Edit</button></a>
+        {{ include("backoffice/user/_delete_form.html.twig") }}
+        {{ include("partials/modal_delete.html.twig") }}
+    </div>
+</div>
+
+{% endblock %}

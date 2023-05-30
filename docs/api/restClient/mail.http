@@ -1,0 +1,11 @@
+POST http://localhost:8000/api/mail
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODIxOTk5MzAsImV4cCI6MTY4MjI2NDczMCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiY2Fycm91ZkBzZWxsZXIuY29tIn0.1HOx99TMLUCRLbBfj74PqqnvOnu2P5ahdB-qwBa0ueml97H97maY80edzItBVnBr_2He67UVwcygHrReoHKLP9Ufj0XaaKDVOgletWQllQSuby1-uSuMrqcF4vtQ4lD9TOYXFZ-S9d-93bUr1wW__6gTOItac4d3LaJpvVabeFvjBph7aPV-8pVfiLmK9BIVKIQQJnchHeEm_m7d9r5naLV-ElLnJrhFwm3oHoNmwURpSWO_XwH0RrDXp0G4D6NwieWgX02xnYn_EM9xDVS9QqWXblyQt32W1lWvR6-BBkebzM5pwXWDDZtl7fk9nvzQyuKKczltCPDfjD119r8_5w
+
+{
+    "email": "tico@gmail.com",
+    "textBody":"Hello there, ouech"
+}
+
+
+
