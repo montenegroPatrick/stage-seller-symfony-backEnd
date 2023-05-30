@@ -89,7 +89,7 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $sql = "SELECT 
         CASE WHEN m.sender_id = u.id THEN m.receiver_id ELSE m.sender_id END AS id FROM user u
         LEFT JOIN my_match m ON m.sender_id = u.id OR m.receiver_id = u.id 
-        WHERE u.id = :user";
+        WHERE m.is_mutual = 1 AND u.id = :user";
 
         $doctrine = $this->getEntityManager()->getConnection();
         $statement = $doctrine->prepare($sql);

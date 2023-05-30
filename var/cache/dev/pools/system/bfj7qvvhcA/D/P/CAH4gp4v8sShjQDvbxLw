@@ -1,0 +1,263 @@
+<?php //App%255CController%255CApi%255CUserController%2523addSkill
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/users/{id}/skill',
+            ],
+            'name' => [
+                'app_api_user_add_skill',
+            ],
+            'requirements' => [
+                [
+                    'id' => '\\d+',
+                ],
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/api/users/{id}/skill',
+            ],
+            'tags' => [
+                1 => [
+                    'User',
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[2],
+                    $o[8],
+                    $o[17],
+                ],
+            ],
+            '_context' => [
+                1 => $o[26],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[15],
+                $o[13],
+                17 => $o[18],
+                20 => $o[24],
+                $o[22],
+                28 => $o[32],
+                $o[30],
+            ],
+            'response' => [
+                2 => '201',
+                8 => '404',
+                17 => '401',
+            ],
+            'description' => [
+                2 => 'Created / Creation of a skill for a user ',
+                8 => 'Not Found',
+                17 => 'Unauthorized',
+                28 => 'User-skill-add',
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[11],
+                ],
+                17 => [
+                    $o[20],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                13 => $o[14],
+                15 => $o[16],
+                18 => $o[19],
+                22 => $o[23],
+                24 => $o[25],
+                26 => $o[27],
+                30 => $o[31],
+                32 => $o[33],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                22 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                24 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                26 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                30 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                32 => '/var/www/html/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 1460,
+                6 => 1460,
+                9 => 1460,
+                13 => 1460,
+                15 => 1460,
+                18 => 1460,
+                22 => 1460,
+                24 => 1460,
+                26 => 1460,
+                30 => 1460,
+                32 => 1460,
+            ],
+            'method' => [
+                3 => 'instantiateAnnotiation',
+                6 => 'instantiateAnnotiation',
+                9 => 'instantiateAnnotiation',
+                13 => 'instantiateAnnotiation',
+                15 => 'instantiateAnnotiation',
+                18 => 'instantiateAnnotiation',
+                22 => 'instantiateAnnotiation',
+                24 => 'instantiateAnnotiation',
+                26 => 'instantiateAnnotiation',
+                30 => 'instantiateAnnotiation',
+                32 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+                18 => 'DocParser',
+                22 => 'DocParser',
+                24 => 'DocParser',
+                26 => 'DocParser',
+                30 => 'DocParser',
+                32 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                22 => 'Doctrine\\Common\\Annotations',
+                24 => 'Doctrine\\Common\\Annotations',
+                26 => 'Doctrine\\Common\\Annotations',
+                30 => 'Doctrine\\Common\\Annotations',
+                32 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[11],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                24 => [
+                    $o[20],
+                ],
+                26 => [
+                    $o[1],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                32 => [
+                    $o[28],
+                ],
+            ],
+            'ref' => [
+                5 => '#/components/schemas/User-skill-add',
+            ],
+            'properties' => [
+                11 => [
+                    $o[12],
+                ],
+                20 => [
+                    $o[21],
+                ],
+                28 => [
+                    $o[29],
+                ],
+            ],
+            'property' => [
+                12 => 'error',
+                21 => 'message',
+                29 => 'id',
+            ],
+            'type' => [
+                12 => 'string',
+                21 => 'string',
+                29 => 'integer',
+            ],
+            'example' => [
+                12 => 'Skill not found || User not found',
+                21 => 'Invalid JWT Token code || Expired JWT Token',
+            ],
+            'schema' => [
+                28 => 'User-skill-add',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[28],
+    ],
+    []
+); }];
